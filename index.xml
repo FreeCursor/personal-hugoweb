@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Homepage on Haoyu&#39;s DIY Site 1.0</title>
+		<link>https://puhaoyu.com/</link>
+		<description>Recent content in Homepage on Haoyu&#39;s DIY Site 1.0</description>
+		<generator>Hugo</generator>
+		<language>en</language>
+		
+		
+		
+		
+			<atom:link href="https://puhaoyu.com/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title></title>
+				<link>https://puhaoyu.com/activities/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://puhaoyu.com/activities/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Research</title>
+				<link>https://puhaoyu.com/research/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://puhaoyu.com/research/</guid>
+				<description>&lt;p&gt;Here are my research projects.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>
