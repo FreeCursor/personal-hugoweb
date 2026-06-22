@@ -1,2 +1,15 @@
 baseURL: "https://example.org/"
 title: "Haoyu's DIY Site 1.0"
+
+params:
+  activities:
+    - title: "High-Precision Laser Photogate System"
+      role: "Independent Hardware Maker & Developer"
+      duration: "2026"
+      summary: "Designed and fabricated a laser-triggered photogate system using an Arduino microcontroller. Wrote core firmware in C++ leveraging hardware interrupts to minimize latency to microseconds, and implemented a software debouncing algorithm to filter out ambient light noise."
+  # 🛠️ 追加到 params 盒子里，注意缩进和 activities 保持绝对对齐
+  research:
+    - title: "3-Stage Magnetic Rail Catapult System"
+      role: "Lead Electromagnetic & Control Hardware Designer"
+      duration: "2026"
+      summary: "Developed and conceptualized a multi-stage serial synchronization logic for an electromagnetic propulsion system. Optimized high-current switching response times using microcontroller hardware configurations, successfully eliminating induction lag across successive coil stages."

@@ -4,11 +4,19 @@
     <meta charset="UTF-8">
     <title>{{ .Site.Title }}</title>
 </head>
-<body style="background-color: #e3d7bf; color: #2C2C2C; font-family: sans-serif; text-align: center; padding-top: 50px;">
+<body style="background-color: #f5f5e5; color: #1D1D1F; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; max-width: 1000px; margin: 0 auto; padding: 40px 20px;">
+    
+    <nav style="display: flex; justify-content: space-between; margin-bottom: 60px;">
+        <a href="/" style="font-weight: bold; text-decoration: none; color: #1D1D1F;">Haoyu's Space</a>
+        <div>
+            <a href="/research/" style="margin-right: 20px; text-decoration: none; color: #515154;">Research</a>
+            <a href="/activities/" style="margin-right: 20px; text-decoration: none; color: #515154;">Activities</a>
+        </div>
+    </nav>
 
-    <div style="font-size: 1.2rem;">
+    <main style="text-align: left;">
         {{ .Content }}
-    </div>
+    </main>
 
 </body>
 </html>
