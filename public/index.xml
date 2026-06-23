@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Homepage on Haoyu&#39;s DIY Site 1.0</title>
-		<link>http://localhost:1313/</link>
+		<link>https://puhaoyu.com/</link>
 		<description>Recent content in Homepage on Haoyu&#39;s DIY Site 1.0</description>
 		<generator>Hugo</generator>
 		<language>en</language>
@@ -10,19 +10,19 @@
 		
 		
 		
-			<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="https://puhaoyu.com/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title></title>
-				<link>http://localhost:1313/activities/</link>
+				<link>https://puhaoyu.com/activities/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>http://localhost:1313/activities/</guid>
+				<guid>https://puhaoyu.com/activities/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Research</title>
-				<link>http://localhost:1313/research/</link>
+				<link>https://puhaoyu.com/research/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>http://localhost:1313/research/</guid>
+				<guid>https://puhaoyu.com/research/</guid>
 				<description>&lt;p&gt;Here are my research projects.&lt;/p&gt;</description>
 			</item>
 	</channel>
