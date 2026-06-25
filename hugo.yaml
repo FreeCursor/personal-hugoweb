@@ -1,13 +1,14 @@
-googleAnalytics: "G-K8N5Y6HVE4"
+
 baseURL: "https://puhaoyu.com/"
-title: "Haoyu's DIY Site 1.0"
+title: "Haoyu's Webpage"
 
 params:
+  
   activities:
-    - title: "High-Precision Laser Photogate System"
-      role: "Independent Hardware Maker & Developer"
+    - title: "Laser Photogate System"
+      role: "Learn C programming through project-based practice."
       duration: "2026"
-      summary: "Designed and fabricated a laser-triggered photogate system using an Arduino microcontroller. Wrote core firmware in C++ leveraging hardware interrupts to minimize latency to microseconds, and implemented a software debouncing algorithm to filter out ambient light noise."
+      summary: "Designed and made a laser-triggered photogate system by using an Arduino microcontroller(nano). Wrote core firmware in C/C++ leveraging hardware interrupts to minimize latency to microseconds, and implemented a software debouncing algorithm to filter out ambient light noise."
   # 🛠️ 追加到 params 盒子里，注意缩进和 activities 保持绝对对齐
   research:
     - title: "3-Stage Magnetic Rail Catapult System"

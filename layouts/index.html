@@ -1,21 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <title>{{ .Site.Title }}</title>
+    
+    <!--    codes below is for Google Analytics (tracking)-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EHNJDPYX4S"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-EHNJDPYX4S');
+</script>
+
 </head>
 <body style="background-color: #f5f5e5; color: #1D1D1F; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; max-width: 1000px; margin: 0 auto; padding: 40px 20px;">
     
+    <!--
     <nav style="display: flex; justify-content: space-between; margin-bottom: 60px;">
-        <a href="/" style="font-weight: bold; text-decoration: none; color: #1D1D1F;">Haoyu's Space</a>
+        <a href="/" style="font-weight: 700; font-size: 1.2rem; text-decoration: none; color: #1D1D1F;">Haoyu's Page</a>
         <div>
             <a href="/research/" style="margin-right: 20px; text-decoration: none; color: #515154;">Research</a>
             <a href="/activities/" style="margin-right: 20px; text-decoration: none; color: #515154;">Activities</a>
         </div>
     </nav>
+-->
+    <nav style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 60px;">
+        <a href="/" style="font-weight: 700; font-size: 1.2rem; text-decoration: none; color: #1D1D1F;">Haoyu's Page</a>
+    
+        <div style="display: flex; gap: 12px;"> 
+            <a href="/research/" style="display: inline-block; padding: 8px 16px; background-color: #c8c8ad7d; color: #1D1D1F; text-decoration: none; border-radius: 8px; font-weight: 500;">Research</a>
+        
+            <a href="/activities/" style="display: inline-block; padding: 8px 16px; background-color: #c8c8ad7d; color: #1D1D1F; text-decoration: none; border-radius: 8px; font-weight: 500;">Activities</a>
+        </div>     
+    </nav>
 
-    <main style="text-align: left;">
-        {{ .Content }}
+    <main style="display: flex; justify-content: space-between; align-items: flex-start; gap: 40px; margin-top: 40px; text-align: left; flex-wrap: wrap;">
+        
+        <div style="flex: 1; min-width: 320px; margin-top: 40px;">
+            <style>
+                /* 1. 给视频强制加高，!important 代表最高优先级，绝不妥协 */
+                main iframe, main video {
+                    width: 100% !important;
+                    min-height: 320px !important;
+                    margin-top: 120px !important; /* 把 35px 改成 60px，视频就会单独往下移 */
+                    border-radius: 12px !important;
+                    position: relative !important;
+                }
+                
+                /* 2. 核心破解：撕掉 Hugo 自动生成的隐形紧箍咒外壳 */
+                main div:has(iframe) {
+                    height: auto !important;
+                    padding-bottom: 0 !important; 
+                    overflow: visible !important;
+                }
+            </style>
+            {{ .Content }}
+        </div>
+
+        <div style="flex: 0 0 320px; text-align: center; margin-top: 30px;">
+            <img src="/profile-picture1.jpg" alt="Haoyu's selfie" style="width: 100%; max-width: 320px; height: auto; border-radius: 16px; box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08); object-fit: cover;">
+        </div>
+
     </main>
 
 </body>

@@ -6,5 +6,8 @@ title: "Homepage"
 
 ### I'm Haoyu Pu. Hope this page can help you know me better.
 
+
 Self-introduction video：
-{{< youtube dQw4w9WgXcQ >}}
+
+    {{< youtube dQw4w9WgXcQ >}}
+
