@@ -4,10 +4,15 @@ title: "Homepage"
 
 # Hello to the admission committe. Welcome to my page!
 
-### I'm Haoyu Pu. Hope this page can help you know me better.
+### I'm Haoyu Pu, a 18-year-old student from Shenyang No.40 High School. I have a great enthusiasm for electronics and circuits, and I want to bring my imagination to life through engineering.
+ <span style="font-family: Georgia, serif; font-style: italic;"> 
+"The world breaks every one and afterward many are strong at the broken places."
+</span> 
+<br>
+<br>
+<br>
 
-
-Self-introduction video：
+### Welcome to watch Self-introduction video：
 
     {{< youtube dQw4w9WgXcQ >}}
 

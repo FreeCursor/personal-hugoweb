@@ -1,9 +1,13 @@
 
 baseURL: "https://puhaoyu.com/"
 title: "Haoyu's Webpage"
-
+markup:
+  goldmark:
+    renderer:
+      unsafe: true # 允许在 .md 文件里直接写 HTML 和 inline style
+      
 params:
-  
+
   activities:
     - title: "Laser Photogate System"
       role: "Learn C programming through project-based practice."
