@@ -2,10 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="icon" type="image/png" href="/favicon.png?v=1">
     <title>Haoyu&#39;s Webpage</title>
 
-    
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-EHNJDPYX4S"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -14,6 +13,23 @@
 
         gtag('config', 'G-EHNJDPYX4S');
     </script>
+
+<style>
+         
+        main a {
+            color: #5f5ddeb3;              
+            text-decoration: none;       
+            font-weight: 500;            
+            transition: color 0.2s ease; 
+        }
+
+         
+        main a:hover {
+            color: #004499;              
+            text-decoration: underline;  
+        }
+    </style>
+
 </head>
 <body style="background-color: #f5f5e5; color: #1D1D1F; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; max-width: 1000px; margin: 0 auto; padding: 40px 20px;">
     
@@ -32,10 +48,30 @@
             <h2 style="margin-bottom: 30px; color: #1D1D1F;">My Activities</h2>
             
             
-                <div style="background: white; padding: 20px; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
-                    <h3 style="margin-top: 0; color: #1D1D1F;">Laser Photogate System</h3>
-                    <p style="color: #515154; font-size: 0.9rem;"><strong>Learn C programming through project-based practice.</strong> | 2026</p>
-                    <p style="color: #1D1D1F;">Designed and made a laser-triggered photogate system by using an Arduino microcontroller(nano). Wrote core firmware in C/C&#43;&#43; leveraging hardware interrupts to minimize latency to microseconds, and implemented a software debouncing algorithm to filter out ambient light noise.</p>
+                <div style="background: white; padding: 20px; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; gap: 24px; align-items: center; justify-content: space-between;">
+                    
+                    <div style="flex: 1;">
+                        <h3 style="margin-top: 0; color: #1D1D1F; margin-bottom: 8px;">Laser Photogate System</h3>
+                        <p style="color: #515154; font-size: 0.9rem; margin-bottom: 12px;"><strong>Learn C programming through project-based practice.</strong> | 2026</p>
+                        <p style="color: #1D1D1F; margin-bottom: 0;">Designed and made a laser-triggered photogate system by using an Arduino microcontroller(nano). Wrote core firmware in C/C++ leveraging hardware interrupts to minimize latency to microseconds, and implemented a software debouncing algorithm to filter out ambient light noise.</p>
+                    </div>
+
+                    
+                    <img src="/solderingpin.jpg" alt="Laser Photogate System" style="width: 320px; height: 220px; object-fit: cover; border-radius: 6px; flex-shrink: 0; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                    
+                </div>
+            
+                <div style="background: white; padding: 20px; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; gap: 24px; align-items: center; justify-content: space-between;">
+                    
+                    <div style="flex: 1;">
+                        <h3 style="margin-top: 0; color: #1D1D1F; margin-bottom: 8px;">Learning coding by meself</h3>
+                        <p style="color: #515154; font-size: 0.9rem; margin-bottom: 12px;"><strong>Java &amp; Arduino C/C&#43;&#43;</strong> | 2025-2026</p>
+                        <p style="color: #1D1D1F; margin-bottom: 0;">I teaching myself coding Java for 2026 AP computer science A exam, and Arduino C/C++ for my own projects. I have learned the basic syntax of Java and Arduino C/C++, and I have also learned how to use the Arduino IDE to write and upload code to the Arduino board. Check it out-&gt; <a href="https://github.com/FreeCursor/java-learning-journal">Java</a>, <a href="https://github.com/FreeCursor/arduino-learning-journal">Arduino C/C++</a></p>
+                    </div>
+
+                    
+                    <img src="/CallnRollProgram.jpg" alt="Learning coding by meself" style="width: 320px; height: 220px; object-fit: cover; border-radius: 6px; flex-shrink: 0; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                    
                 </div>
             
         
@@ -46,12 +82,10 @@
 
 <canvas id="particle-canvas" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; pointer-events: none;"></canvas>
 
-
-    <script>
+<script>
         const canvas = document.getElementById('particle-canvas');
         const ctx = canvas.getContext('2d');
         let particles = [];
-        
         
         function resize() {
             canvas.width = window.innerWidth;
@@ -60,13 +94,12 @@
         window.addEventListener('resize', resize);
         resize();
 
-        
         class Particle {
             constructor() {
                 this.x = Math.random() * canvas.width;
                 this.y = Math.random() * canvas.height;
-                this.vx = (Math.random() - 0.5) * 0.8; 
-                this.vy = (Math.random() - 0.5) * 0.8; 
+                this.vx = (Math.random() - 0.5) * 0.8;
+                this.vy = (Math.random() - 0.5) * 0.8;
                 this.radius = Math.random() * 1.5 + 1.5;
             }
             update() {
@@ -78,29 +111,22 @@
             draw() {
                 ctx.beginPath();
                 ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
-                ctx.fillStyle = 'rgba(29, 29, 31, 0.15)'; 
+                ctx.fillStyle = 'rgba(29, 29, 31, 0.15)';
                 ctx.fill();
             }
         }
 
-        
         for (let i = 0; i < 250; i++) particles.push(new Particle());
 
-        
         function animate() {
             ctx.clearRect(0, 0, canvas.width, canvas.height);
-            
-            
             for (let i = 0; i < particles.length; i++) {
                 particles[i].update();
                 particles[i].draw();
-                
                 for (let j = i + 1; j < particles.length; j++) {
                     const dx = particles[i].x - particles[j].x;
                     const dy = particles[i].y - particles[j].y;
                     const dist = Math.sqrt(dx * dx + dy * dy);
-                    
-                    
                     if (dist < 100) {
                         ctx.beginPath();
                         ctx.moveTo(particles[i].x, particles[i].y);
