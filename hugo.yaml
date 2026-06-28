@@ -13,6 +13,12 @@ params:
       role: "Learn C programming through project-based practice."
       duration: "2026"
       summary: "Designed and made a laser-triggered photogate system by using an Arduino microcontroller(nano). Wrote core firmware in C/C++ leveraging hardware interrupts to minimize latency to microseconds, and implemented a software debouncing algorithm to filter out ambient light noise."
+      image: "/solderingpin.jpg"
+    - title: "Learning coding by meself"
+      role: "Java & Arduino C/C++"
+      duration: "2025-2026"
+      summary: "I teaching myself coding Java for 2026 AP computer science A exam, and Arduino C/C++ for my own projects. I have learned the basic syntax of Java and Arduino C/C++, and I have also learned how to use the Arduino IDE to write and upload code to the Arduino board."
+      image: "/railgun.jpg"
   # 🛠️ 追加到 params 盒子里，注意缩进和 activities 保持绝对对齐
   research:
     - title: "3-Stage Magnetic Rail Catapult System"
