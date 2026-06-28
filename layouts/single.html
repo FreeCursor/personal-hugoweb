@@ -13,6 +13,23 @@
 
         gtag('config', 'G-EHNJDPYX4S');
     </script>
+
+<style>
+        /* 1. 控制 Markdown 生成的所有链接的默认状态 */
+        main a {
+            color: #5f5ddeb3;             /* 修改链接颜色（比如苹果官网的经典蓝色） */
+            text-decoration: none;      /* 默认去掉下划线，让页面更整洁 */
+            font-weight: 500;           /* 让链接文字稍微加粗一点点，更明显 */
+            transition: color 0.2s ease;/* 让颜色变化时有平滑的过渡动画 */
+        }
+
+        /* 2. 控制鼠标放上去（悬停）时的状态 */
+        main a:hover {
+            color: #004499;             /* 鼠标悬停时颜色变深 */
+            text-decoration: underline; /* 鼠标悬停时才显现出下划线 */
+        }
+    </style>
+
 </head>
 <body style="background-color: #f5f5e5; color: #1D1D1F; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; max-width: 1000px; margin: 0 auto; padding: 40px 20px;">
     
@@ -54,7 +71,7 @@
                     <div style="flex: 1;">
                         <h3 style="margin-top: 0; color: #1D1D1F; margin-bottom: 8px;">{{ .title }}</h3>
                         <p style="color: #515154; font-size: 0.9rem; margin-bottom: 12px;"><strong>{{ .role }}</strong> | {{ .duration }}</p>
-                        <p style="color: #1D1D1F; margin-bottom: 0;">{{ .summary }}</p>
+                        <p style="color: #1D1D1F; margin-bottom: 0;">{{ .summary | markdownify}}</p>
                     </div>
 
                     {{ if .image }}

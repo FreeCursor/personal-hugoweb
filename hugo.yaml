@@ -17,8 +17,8 @@ params:
     - title: "Learning coding by meself"
       role: "Java & Arduino C/C++"
       duration: "2025-2026"
-      summary: "I teaching myself coding Java for 2026 AP computer science A exam, and Arduino C/C++ for my own projects. I have learned the basic syntax of Java and Arduino C/C++, and I have also learned how to use the Arduino IDE to write and upload code to the Arduino board."
-      image: "/railgun.jpg"
+      summary: "I teaching myself coding Java for 2026 AP computer science A exam, and Arduino C/C++ for my own projects. I have learned the basic syntax of Java and Arduino C/C++, and I have also learned how to use the Arduino IDE to write and upload code to the Arduino board. Check it out-> [Java](https://github.com/FreeCursor/java-learning-journal), [Arduino C/C++](https://github.com/FreeCursor/arduino-learning-journal)"
+      image: "/CallnRollProgram.jpg"
   # 🛠️ 追加到 params 盒子里，注意缩进和 activities 保持绝对对齐
   research:
     - title: "3-Stage Magnetic Rail Catapult System"
