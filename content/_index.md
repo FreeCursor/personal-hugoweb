@@ -9,10 +9,6 @@ title: "Homepage"
 "The world breaks every one and afterward many are strong at the broken places."
 </span> 
 
-I’d love for you to take a look at the code I typed while teaching myself:
-
-[Java](https://github.com/FreeCursor/java-learning-journal)  
-[Arduino(C++)](https://github.com/FreeCursor/arduino-learning)
 <br>
 <br>
 <br>
