@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8">
     <link rel="icon" type="image/png" href="/favicon.png?v=1">
-    <title>{{ .Site.Title }}</title>
+    <title>Haoyu&#39;s Webpage</title>
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-EHNJDPYX4S"></script>
     <script>
@@ -15,18 +15,18 @@
     </script>
 
 <style>
-        /* 1. 控制 Markdown 生成的所有链接的默认状态 */
+         
         main a {
-            color: #5f5ddeb3;             /* 修改链接颜色（比如苹果官网的经典蓝色） */
-            text-decoration: none;      /* 默认去掉下划线，让页面更整洁 */
-            font-weight: 500;           /* 让链接文字稍微加粗一点点，更明显 */
-            transition: color 0.2s ease;/* 让颜色变化时有平滑的过渡动画 */
+            color: #5f5ddeb3;              
+            text-decoration: none;       
+            font-weight: 500;            
+            transition: color 0.2s ease; 
         }
 
-        /* 2. 控制鼠标放上去（悬停）时的状态 */
+         
         main a:hover {
-            color: #004499;             /* 鼠标悬停时颜色变深 */
-            text-decoration: underline; /* 鼠标悬停时才显现出下划线 */
+            color: #004499;              
+            text-decoration: underline;  
         }
     </style>
 
@@ -44,42 +44,35 @@
 
     <main style="text-align: left;">
         
-        {{ if in .Permalink "projects" }}
-            <h2 style="margin-bottom: 30px; color: #1D1D1F;">Projects</h2>
-            
-            {{ range .Site.Params.projects }}
-                <div style="background: white; padding: 20px; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; gap: 24px; align-items: center; justify-content: space-between;">
-                    
-                    <div style="flex: 1;">
-                        <h3 style="margin-top: 0; color: #1D1D1F; margin-bottom: 8px;">{{ .title }}</h3>
-                        <p style="color: #515154; font-size: 0.9rem; margin-bottom: 12px;"><strong>{{ .role }}</strong> | {{ .duration }}</p>
-                        <p style="color: #1D1D1F; margin-bottom: 0;">{{ .summary | markdownify}}</p>
-                    </div>
-
-                    {{ if .image }}
-                    <img src="{{ .image }}" alt="{{ .title }}" style="width: 320px; height: 220px; object-fit: cover; border-radius: 6px; flex-shrink: 0; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
-                    {{ end }}
-                </div>
-            {{ end }}
-
-        {{ else if in .Permalink "experience" }}
+        
             <h2 style="margin-bottom: 30px; color: #1D1D1F;">Experience</h2>
             
-            {{ range $.Site.Params.experience }}
+            
                 <div style="background: white; padding: 20px; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; gap: 24px; align-items: center; justify-content: space-between;">
                     
                     <div style="flex: 1;">
-                        <h3 style="margin-top: 0; color: #1D1D1F; margin-bottom: 8px;">{{ .title }}</h3>
-                        <p style="color: #515154; font-size: 0.9rem; margin-bottom: 12px;"><strong>{{ .role }}</strong> | {{ .duration }}</p>
-                        <p style="color: #1D1D1F; margin-bottom: 0;">{{ .summary | markdownify}}</p>
+                        <h3 style="margin-top: 0; color: #1D1D1F; margin-bottom: 8px;">Learning coding by meself</h3>
+                        <p style="color: #515154; font-size: 0.9rem; margin-bottom: 12px;"><strong>Java &amp; Arduino C/C&#43;&#43;</strong> | 2025-2026</p>
+                        <p style="color: #1D1D1F; margin-bottom: 0;">I teaching myself coding Java for 2026 AP computer science A exam, and Arduino C/C++ for my own projects. I have learned the basic syntax of Java and Arduino C/C++, and I have also learned how to use the Arduino IDE to write and upload code to the Arduino board. Check it out-&gt; <a href="https://github.com/FreeCursor/java-learning-journal">Java</a>, <a href="https://github.com/FreeCursor/arduino-learning-journal">Arduino C/C++</a></p>
                     </div>
 
-                    {{ if .image }}
-                    <img src="{{ .image }}" alt="{{ .title }}" style="width: 320px; height: 220px; object-fit: cover; border-radius: 6px; flex-shrink: 0; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
-                    {{ end }}
+                    
+                    <img src="/CallnRollProgram.jpg" alt="Learning coding by meself" style="width: 320px; height: 220px; object-fit: cover; border-radius: 6px; flex-shrink: 0; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                    
                 </div>
-            {{ end }}
-        {{ end }}
+            
+                <div style="background: white; padding: 20px; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; gap: 24px; align-items: center; justify-content: space-between;">
+                    
+                    <div style="flex: 1;">
+                        <h3 style="margin-top: 0; color: #1D1D1F; margin-bottom: 8px;">Embarking on a dual-track journey</h3>
+                        <p style="color: #515154; font-size: 0.9rem; margin-bottom: 12px;"><strong>Preparing for both Gaokao and overseas exams at the same time.</strong> | 2024-2026</p>
+                        <p style="color: #1D1D1F; margin-bottom: 0;">I learn Gaokao subjects at school, and I learn overseas subjects like SAT and AP at home. Balancing the intense pressure of the Chinese Gaokao and the.other preparation for overseas exams is literally a challenge, but I learn how to manage my time efficiently, how to prioritize my tasks and how to cut my losses decisively.</p>
+                    </div>
+
+                    
+                </div>
+            
+        
 
     </main>
 

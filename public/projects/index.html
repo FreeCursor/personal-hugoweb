@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8">
     <link rel="icon" type="image/png" href="/favicon.png?v=1">
-    <title>{{ .Site.Title }}</title>
+    <title>Haoyu&#39;s Webpage</title>
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-EHNJDPYX4S"></script>
     <script>
@@ -15,18 +15,18 @@
     </script>
 
 <style>
-        /* 1. 控制 Markdown 生成的所有链接的默认状态 */
+         
         main a {
-            color: #5f5ddeb3;             /* 修改链接颜色（比如苹果官网的经典蓝色） */
-            text-decoration: none;      /* 默认去掉下划线，让页面更整洁 */
-            font-weight: 500;           /* 让链接文字稍微加粗一点点，更明显 */
-            transition: color 0.2s ease;/* 让颜色变化时有平滑的过渡动画 */
+            color: #5f5ddeb3;              
+            text-decoration: none;       
+            font-weight: 500;            
+            transition: color 0.2s ease; 
         }
 
-        /* 2. 控制鼠标放上去（悬停）时的状态 */
+         
         main a:hover {
-            color: #004499;             /* 鼠标悬停时颜色变深 */
-            text-decoration: underline; /* 鼠标悬停时才显现出下划线 */
+            color: #004499;              
+            text-decoration: underline;  
         }
     </style>
 
@@ -44,42 +44,49 @@
 
     <main style="text-align: left;">
         
-        {{ if in .Permalink "projects" }}
+        
             <h2 style="margin-bottom: 30px; color: #1D1D1F;">Projects</h2>
             
-            {{ range .Site.Params.projects }}
-                <div style="background: white; padding: 20px; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; gap: 24px; align-items: center; justify-content: space-between;">
-                    
-                    <div style="flex: 1;">
-                        <h3 style="margin-top: 0; color: #1D1D1F; margin-bottom: 8px;">{{ .title }}</h3>
-                        <p style="color: #515154; font-size: 0.9rem; margin-bottom: 12px;"><strong>{{ .role }}</strong> | {{ .duration }}</p>
-                        <p style="color: #1D1D1F; margin-bottom: 0;">{{ .summary | markdownify}}</p>
-                    </div>
-
-                    {{ if .image }}
-                    <img src="{{ .image }}" alt="{{ .title }}" style="width: 320px; height: 220px; object-fit: cover; border-radius: 6px; flex-shrink: 0; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
-                    {{ end }}
-                </div>
-            {{ end }}
-
-        {{ else if in .Permalink "experience" }}
-            <h2 style="margin-bottom: 30px; color: #1D1D1F;">Experience</h2>
             
-            {{ range $.Site.Params.experience }}
                 <div style="background: white; padding: 20px; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; gap: 24px; align-items: center; justify-content: space-between;">
                     
                     <div style="flex: 1;">
-                        <h3 style="margin-top: 0; color: #1D1D1F; margin-bottom: 8px;">{{ .title }}</h3>
-                        <p style="color: #515154; font-size: 0.9rem; margin-bottom: 12px;"><strong>{{ .role }}</strong> | {{ .duration }}</p>
-                        <p style="color: #1D1D1F; margin-bottom: 0;">{{ .summary | markdownify}}</p>
+                        <h3 style="margin-top: 0; color: #1D1D1F; margin-bottom: 8px;">3-Stage Magnetic Rail Catapult System</h3>
+                        <p style="color: #515154; font-size: 0.9rem; margin-bottom: 12px;"><strong>Lead Electromagnetic &amp; Control Hardware Designer</strong> | 2026</p>
+                        <p style="color: #1D1D1F; margin-bottom: 0;">Developed and conceptualized a multi-stage serial synchronization logic for an electromagnetic propulsion system. Optimized high-current switching response times using microcontroller hardware configurations, successfully eliminating induction lag across successive coil stages.</p>
                     </div>
 
-                    {{ if .image }}
-                    <img src="{{ .image }}" alt="{{ .title }}" style="width: 320px; height: 220px; object-fit: cover; border-radius: 6px; flex-shrink: 0; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
-                    {{ end }}
+                    
                 </div>
-            {{ end }}
-        {{ end }}
+            
+                <div style="background: white; padding: 20px; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; gap: 24px; align-items: center; justify-content: space-between;">
+                    
+                    <div style="flex: 1;">
+                        <h3 style="margin-top: 0; color: #1D1D1F; margin-bottom: 8px;">Laser Photogate System</h3>
+                        <p style="color: #515154; font-size: 0.9rem; margin-bottom: 12px;"><strong>Learn C&#43;&#43; programming through practical project.</strong> | 2026</p>
+                        <p style="color: #1D1D1F; margin-bottom: 0;">Designed and made a laser-triggered photogate system by using an Arduino microcontroller(nano). Wrote core firmware in C/C++ leveraging hardware interrupts to minimize latency to microseconds, and implemented a software debouncing algorithm to filter out ambient light noise.</p>
+                    </div>
+
+                    
+                    <img src="/solderingpin.jpg" alt="Laser Photogate System" style="width: 320px; height: 220px; object-fit: cover; border-radius: 6px; flex-shrink: 0; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                    
+                </div>
+            
+                <div style="background: white; padding: 20px; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; gap: 24px; align-items: center; justify-content: space-between;">
+                    
+                    <div style="flex: 1;">
+                        <h3 style="margin-top: 0; color: #1D1D1F; margin-bottom: 8px;">Random name picker program</h3>
+                        <p style="color: #515154; font-size: 0.9rem; margin-bottom: 12px;"><strong>Make a program to help teachers call on students in class by using Java.</strong> | 2026</p>
+                        <p style="color: #1D1D1F; margin-bottom: 0;">Because there is no good name picker program for teachers to use (the previous one was lost after an OS update), I made a simple name picker program by using Java. It can help teachers call on students in class. It is the most useful program I&rsquo;ve written so far. Check it out-&gt; <a href="https://github.com/FreeCursor/RollCallApp">Random Name Picker Program</a></p>
+                    </div>
+
+                    
+                    <img src="/NamePicker.jpg" alt="Random name picker program" style="width: 320px; height: 220px; object-fit: cover; border-radius: 6px; flex-shrink: 0; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                    
+                </div>
+            
+
+        
 
     </main>
 

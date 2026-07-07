@@ -7,8 +7,7 @@ markup:
       unsafe: true # 允许在 .md 文件里直接写 HTML 和 inline style
       
 params:
-
-  Experience:
+  experience:
     - title: "Learning coding by meself"
       role: "Java & Arduino C/C++"
       duration: "2025-2026"
@@ -31,7 +30,7 @@ params:
 
     
   #  追加到 params 盒子里，注意缩进和 Experience 保持对齐
-  research:
+  projects:
     - title: "3-Stage Magnetic Rail Catapult System"
       role: "Lead Electromagnetic & Control Hardware Designer"
       duration: "2026"
