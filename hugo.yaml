@@ -17,7 +17,7 @@ params:
         I have also learned how to use the Arduino IDE to write and upload code to the Arduino
         board. Check it out-> [Java](https://github.com/FreeCursor/java-learning-journal),
         [Arduino C/C++](https://github.com/FreeCursor/arduino-learning-journal)
-      image: "/CallnRollProgram.jpg"
+      image: "/prepcsa.png"
 
     - title: "Embarking on a dual-track journey"
       role: "Preparing for both Gaokao and overseas exams at the same time."
@@ -27,7 +27,17 @@ params:
         at home. Balancing the intense pressure of the Chinese Gaokao and the.other preparation
         for overseas exams is literally a challenge, but I learn how to manage my time efficiently,
         how to prioritize my tasks and how to cut my losses decisively.
+      image: "/dual-track.jpg"
 
+    - title: "Serving as a class president at school"
+      role: "Leading and managing class affairs."
+      duration: "2024-2026"
+      summary: >-
+        I serve as class president at high school. I still remember the first time I stood at 
+        the platform, facing the whole class, and I realized the difficulty of being an class president. 
+        With the help of my teachers and classmates, I gradually learned how to cope with class affairs like giving speeches, organizing activities, and mediating conflicts. 
+        It's really a great experience for me to learn how to become a good leader and how to express my idea effectively. 
+      image: "/offeringSpeech.jpg"
     
   #  追加到 params 盒子里，注意缩进和 Experience 保持对齐
   projects:
@@ -58,4 +68,5 @@ params:
         was lost after an OS update), I made a simple name picker program by using Java.
         It can help teachers call on students in class. It is the most useful program I've
         written so far. Check it out-> [Random Name Picker Program](https://github.com/FreeCursor/RollCallApp)
-      image: "/NamePicker.jpg"  
+      image: "/RandomNamePicker.jpg"  
+    
