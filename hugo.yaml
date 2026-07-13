@@ -49,6 +49,7 @@ params:
         propulsion system. Optimized high-current switching response times using microcontroller
         hardware configurations, successfully eliminating induction lag across successive
         coil stages.
+      image: "/solderingpin.jpg"
     
     - title: "Laser Photogate System"
       role: "Learn C++ programming through practical project."
@@ -58,7 +59,7 @@ params:
         Wrote core firmware in C/C++ leveraging hardware interrupts to minimize latency to
         microseconds, and implemented a software debouncing algorithm to filter out ambient
         light noise.
-      image: "/solderingpin.jpg"
+      image: "/OnshapeDesign.png"
 
     - title: "Random name picker program"
       role: "Make a program to help teachers call on students in class by using Java."
