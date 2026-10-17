@@ -8,25 +8,15 @@ markup:
       
 params:
   experience:
-    - title: "Learning coding by meself"
-      role: "Java & Arduino C/C++"
-      duration: "2025-2026"
-      summary: >-
-        I teaching myself coding Java for 2026 AP computer science A exam, and Arduino C/C++
-        for my own projects. I have learned the basic syntax of Java and Arduino C/C++, and
-        I have also learned how to use the Arduino IDE to write and upload code to the Arduino
-        board. Check it out-> [Java](https://github.com/FreeCursor/java-learning-journal),
-        [Arduino C/C++](https://github.com/FreeCursor/arduino-learning-journal)
-      image: "/prepcsa.png"
-
     - title: "Embarking on a dual-track journey"
       role: "Preparing for both Gaokao and overseas exams at the same time."
       duration: "2024-2026"
       summary: >-
-        I learn Gaokao subjects at school, and I learn overseas subjects like SAT and AP
-        at home. Balancing the intense pressure of the Chinese Gaokao and the.other preparation
-        for overseas exams is literally a challenge, but I learn how to manage my time efficiently,
-        how to prioritize my tasks and how to cut my losses decisively.
+        Preparing for both the Chinese Gaokao and SAT/AP exams at the same time is no easy feat. 
+        Because my high school is a traditional Chinese high school and doesn't offer formal AP or SAT courses, 
+        I had to build my own study framework and optimize my nights and weekends to master AP concepts. 
+        Balancing the intense pressure of the Gaokao with SAT and AP preparation was an immense challenge, 
+        but it helped me gain the ability to manage time efficiently and develop strong self-discipline.
       image: "/dual-track.jpg"
 
     - title: "Serving as a class president at school"
@@ -38,7 +28,27 @@ params:
         With the help of my teachers and classmates, I gradually learned how to cope with class affairs like giving speeches, organizing activities, and mediating conflicts. 
         It's really a great experience for me to learn how to become a good leader and how to express my idea effectively. 
       image: "/offeringSpeech.jpg"
+
+    - title: "Learning coding by meself"
+      role: "Java & Arduino C/C++"
+      duration: "2025-2026"
+      summary: >-
+        I am teaching myself coding Java for the 2026 AP computer science A exam, and Arduino C/C++
+        for my own projects. I have learned the basic syntax of Java and Arduino C/C++, and
+        I have also learned how to use the Arduino IDE to write and upload code to the Arduino
+        board. Check it out-> [Java](https://github.com/FreeCursor/java-learning-journal),
+        [Arduino C/C++](https://github.com/FreeCursor/arduino-learning-journal)
+      image: "/prepcsa.png"
+
     
+    - title: "Personal website"
+      role: "Building and maintaining my personal website."
+      duration: "2026"
+      summary: >-
+        With the help of Generative AI, I rapidly learned front-end basics, 
+        engineering a clean static website from scratch for project documentation.
+      image: "/website.png"
+
   #  追加到 params 盒子里，注意缩进和 Experience 保持对齐
   projects:
     - title: "3-Stage Magnetic Rail Catapult System"
@@ -57,8 +67,7 @@ params:
       summary: >-
         Designed and made a laser-triggered photogate system by using an Arduino microcontroller(nano).
         Wrote core firmware in C/C++ leveraging hardware interrupts to minimize latency to
-        microseconds, and implemented a software debouncing algorithm to filter out ambient
-        light noise.
+        microseconds, and implemented a software debouncing algorithm to filter out noise.
       image: "/OnshapeDesign.png"
 
     - title: "Random name picker program"
