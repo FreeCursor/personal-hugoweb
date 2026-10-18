@@ -40,7 +40,33 @@ params:
         [Arduino C/C++](https://github.com/FreeCursor/arduino-learning-journal)
       image: "/prepcsa.png"
 
+    - title: "Doing voluntary work"
+      role: "serving the community as a volunteer"
+      duration: "2026"
+      summary: >-
+        I assisted community staff in carrying out public welfare science promotion for the "3`15 International Consumer Rights Day",
+        and educated community residents on the selection and safe use of food-related products.
+      image: "/volunteer.jpg"
     
+    - title: "Helping my classmates with their studies"
+      role: ""
+      duration: "2025"
+      summary: >-
+        I was glad to help my classmates. In the picutre, I was teaching math problem sets to my classmates.
+      image: "/teaching.jpg"
+    
+
+  #  追加到 params 盒子里，注意缩进和 Experience 保持对齐
+  projects:
+    - title: "Laser Photogate System"
+      role: "Learn C++ programming through practical project."
+      duration: "2026"
+      summary: >-
+        Designed and made a laser-triggered photogate system by using an Arduino microcontroller(nano).
+        Wrote core firmware in C/C++ leveraging hardware interrupts to minimize latency to
+        microseconds, and implemented a software debouncing algorithm to filter out noise.
+      image: "/solderingpin.jpg"
+      
     - title: "Personal website"
       role: "Building and maintaining my personal website."
       duration: "2026"
@@ -49,26 +75,7 @@ params:
         engineering a clean static website from scratch for project documentation.
       image: "/website.png"
 
-  #  追加到 params 盒子里，注意缩进和 Experience 保持对齐
-  projects:
-    - title: "3-Stage Magnetic Rail Catapult System"
-      role: "Lead Electromagnetic & Control Hardware Designer"
-      duration: "2026"
-      summary: >-
-        Developed and conceptualized a multi-stage serial synchronization logic for an electromagnetic
-        propulsion system. Optimized high-current switching response times using microcontroller
-        hardware configurations, successfully eliminating induction lag across successive
-        coil stages.
-      image: "/solderingpin.jpg"
     
-    - title: "Laser Photogate System"
-      role: "Learn C++ programming through practical project."
-      duration: "2026"
-      summary: >-
-        Designed and made a laser-triggered photogate system by using an Arduino microcontroller(nano).
-        Wrote core firmware in C/C++ leveraging hardware interrupts to minimize latency to
-        microseconds, and implemented a software debouncing algorithm to filter out noise.
-      image: "/OnshapeDesign.png"
 
     - title: "Random name picker program"
       role: "Make a program to help teachers call on students in class by using Java."
