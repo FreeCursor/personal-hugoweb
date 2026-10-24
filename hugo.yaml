@@ -40,7 +40,7 @@ params:
         [Arduino C/C++](https://github.com/FreeCursor/arduino-learning-journal)
       image: "/prepcsa.png"
 
-    - title: "Doing voluntary work"
+    - title: "Voluntary work"
       role: "serving the community as a volunteer"
       duration: "2026"
       summary: >-
@@ -50,10 +50,23 @@ params:
     
     - title: "Helping my classmates with their studies"
       role: ""
-      duration: "2025"
+      duration: "2024-2026"
       summary: >-
-        I was glad to help my classmates. In the picutre, I was teaching math problem sets to my classmates.
+        I was glad to help my classmates. In the picture, I was teaching math problem sets to my classmates.
       image: "/teaching.jpg"
+
+    - title: "Research on High School Students' Screen Time"
+      role: "Collecting and analyzing data"
+      duration: "2026"
+      summary: >-
+        During the winter break, I collaborated with classmates to conduct a research study examining screen-time habits among high school students, focusing on data collection and behavioral analysis.
+      image: "/research.png"
+    - title: "Honors and Awards"
+      role: ""
+      duration: "2024-2026"
+      summary: >-
+        Selected honors and recognitions.
+      image: "/honors.jpg"
     
 
   #  追加到 params 盒子里，注意缩进和 Experience 保持对齐
